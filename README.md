@@ -27,8 +27,8 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_asg_name"></a> [asg\_name](#input\_asg\_name) | Autoscaling group name. Required. | `string` | n/a | yes |
 | <a name="input_start_capacity"></a> [start\_capacity](#input\_start\_capacity) | How many nodes to spin up in start cron. Required. | `number` | n/a | yes |
-| <a name="input_start_cron"></a> [start\_cron](#input\_start\_cron) | n/a | `string` | `"0 9 ? * MON-FRI *"` | no |
-| <a name="input_stop_cron"></a> [stop\_cron](#input\_stop\_cron) | n/a | `string` | `"0 18 ? * MON-FRI *"` | no |
+| <a name="input_start_cron"></a> [start\_cron](#input\_start\_cron) | n/a | `string` | `"30 7 * * 1-5"` | no |
+| <a name="input_stop_cron"></a> [stop\_cron](#input\_stop\_cron) | n/a | `string` | `"30 18 * * 1-5"` | no |
 | <a name="input_time_zone"></a> [time\_zone](#input\_time\_zone) | n/a | `string` | `"America/Sao_Paulo"` | no |
 
 ## Outputs

@@ -9,15 +9,17 @@ variable "start_capacity" {
 }
 
 variable "time_zone" {
+  type    = string
   default = "America/Sao_Paulo"
 }
 
 variable "start_cron" {
+  type    = string
   default = "30 7 * * 1-5"
 }
 
 variable "stop_cron" {
+  type    = string
   default = "30 18 * * 1-5"
 }
 
-0 8 ? * MON-FRI *

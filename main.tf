@@ -4,7 +4,6 @@ resource "aws_autoscaling_schedule" "stop" {
   max_size              = -1 # Keeps original max_size
   desired_capacity      = 0  # STOP
 
-  # Defaults to Monday to Friday at 6:00 AM
   recurrence = var.stop_cron
   time_zone  = var.time_zone
 
@@ -17,7 +16,6 @@ resource "aws_autoscaling_schedule" "start" {
   max_size              = -1                 # Keeps original max_size
   desired_capacity      = var.start_capacity # START
 
-  # Defaults to Monday to Friday at 9:00 AM
   recurrence = var.start_cron
   time_zone  = var.time_zone
 
