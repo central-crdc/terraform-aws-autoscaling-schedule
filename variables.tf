@@ -13,9 +13,11 @@ variable "time_zone" {
 }
 
 variable "start_cron" {
-  default = "0 9 ? * MON-FRI *"
+  default = "30 7 * * 1-5"
 }
 
 variable "stop_cron" {
-  default = "0 18 ? * MON-FRI *"
+  default = "30 18 * * 1-5"
 }
+
+0 8 ? * MON-FRI *
