@@ -3,9 +3,16 @@ variable "asg_name" {
   type        = string
 }
 
-variable "start_capacity" {
-  description = "How many nodes to spin up in start cron. Required."
-  type        = number
+variable "desired_capacity" {
+  type = number
+}
+
+variable "min_size" {
+  type = number
+}
+
+variable "max_size" {
+  type = number
 }
 
 variable "time_zone" {
